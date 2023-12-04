@@ -8,22 +8,22 @@ const Hero = () => {
   const featuredPosts = [
     {
       id: 1,
-      title: "set video playback speed with javascript",
+      title: "A Diplomat’s Perspective on Artificial Intelligence (AI)",
       category: "Lifestyle",
       author: "Jessica Koli",
       date: " 02 december 2022",
-      image: "/Apartment.png",
+      image: "/pexels1.jpg",
       duratiion: "3mins",
       Excerpt:
         "Did you come here for something in particular or just general Riker-bashing",
     },
     {
       id: 2,
-      title: "set video playback speed with javascript",
+      title: "The Impact of Artificial Intelligence on the Gaming Industry",
       category: "Lifestyle",
       author: "Jessica Koli",
       date: " 02 december 2022",
-      image: "/PC.png",
+      image: "/pexels2.jpg",
 
       duratiion: "3mins",
       Excerpt:
@@ -76,7 +76,11 @@ const Hero = () => {
           </p>
           <div>
             {featuredPosts.map((post) => (
-              <FeaturedCard image={post.image} key={post.id} />
+              <FeaturedCard
+                image={post.image}
+                key={post.id}
+                title={post.title}
+              />
             ))}
           </div>
         </div>
@@ -87,7 +91,11 @@ const Hero = () => {
           </p>
           <div>
             {popularPosts.map((post) => (
-              <PopularCard image={post.image} key={post.id} />
+              <PopularCard
+                image={post.image}
+                key={post.id}
+                title={post.title}
+              />
             ))}
           </div>
         </div>

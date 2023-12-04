@@ -3,7 +3,7 @@ import Image from "next/image";
 import { RiCalendar2Line } from "react-icons/ri";
 import { BsClock } from "react-icons/bs";
 
-const FeaturedCard = ({ image }) => {
+const FeaturedCard = ({ image, title }) => {
   return (
     <div className="p-4 grid grid-cols-7 gap-4 rounded-md bg-white mb-4 last:mb-0">
       <div className="col-span-3 h-56 rounded-md bg-slate-400 ">
@@ -22,7 +22,7 @@ const FeaturedCard = ({ image }) => {
         </span>
 
         <h3 class="text-[1.4rem] font-semibold cursor-pointer dark:text-white w-5/6 mt-2 mb-4">
-          Set Video Playback Speed With JavaScript
+          {title}
         </h3>
 
         <div className="flex items-center gap-1 mb-3">

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Author from "./Author";
 import name from "./Author";
 import Button from "./Button";
+import ButtonTwo from "./ButtonTwo";
 
 const RecentPost = () => {
   const RecentPosts = [
@@ -14,7 +15,7 @@ const RecentPost = () => {
       category: "Lifestyle",
       author: "Jessica Koli",
       date: " 02 december 2022",
-      image: "/Andre.png",
+      image: "/pexels4.jpg",
       duratiion: "3mins",
       Excerpt:
         "Did you come here for something in particular or just general Riker-bashing",
@@ -85,7 +86,7 @@ const RecentPost = () => {
       category: "Lifestyle",
       author: "Jessica Koli",
       date: " 02 december 2022",
-      image: "/Apartment.png",
+      image: "/pexels4.jpg",
 
       duratiion: "3mins",
       Excerpt:
@@ -97,7 +98,7 @@ const RecentPost = () => {
       category: "Lifestyle",
       author: "Jessica Koli",
       date: " 02 december 2022",
-      image: "/PC.png",
+      image: "/pexels3.jpg",
 
       duratiion: "3mins",
       Excerpt:
@@ -112,10 +113,17 @@ const RecentPost = () => {
             <TitleHighlight label="Recent" />
             <span className="text-[20px] ml-1">Posted</span>
           </p>
-          <div className=" grid grid-cols-2 gap-8 ">
+          <div className=" grid grid-cols-2 gap-8  mb-20">
             {RecentPosts.map((post) => (
               <RecentCard image={post.image} />
             ))}
+          </div>
+          <div className="text-center ">
+            <Button label="&larr; Prev" />
+            <ButtonTwo label="1" />
+            <ButtonTwo label="2" />
+            <ButtonTwo label="3" />
+            <Button label="Next &rarr;" />
           </div>
         </div>
         <div className="w-1/3 bg-transparent">
@@ -132,14 +140,14 @@ const RecentPost = () => {
           </div>
           <div className="h-80 bg-primary-500 w-full px-[20px] py-[50px] mb-20">
             <div className="w-[80%]">
-              <h3 class="text-2xl cursor-pointer text-white mb-[10px] ">
+              <h3 class="text-xl cursor-pointer w-[80%] text-white mb-[10px] ">
                 Want To Travel Sikkim By Car
               </h3>
-              <p className="text-sm text-white mb-3">
+              <p className="text-sm text-white mb-5">
                 Did you come here for something in particular or just general
                 Riker-bashing? And blowing into
               </p>
-              <button className="bg-white text-md text-primary-500 px-6 py-2 rounded-md hover:bg-primary-500 hover:text-white hover:border">
+              <button className="bg-white text-[15px] text-primary-500 px-[20px] py-[6px] rounded-md hover:bg-primary-500 hover:text-white hover:border">
                 Visit Us
               </button>
             </div>

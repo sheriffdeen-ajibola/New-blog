@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { BsClock } from "react-icons/bs";
 
-const PopularCard = ({ image }) => {
+const PopularCard = ({ image, title }) => {
   return (
     <div className="flex bg-transparent gap-5 w-auto mb-8">
       <div className="w-1/3 h-22 rounded-md bg-slate-400">
@@ -21,7 +21,7 @@ const PopularCard = ({ image }) => {
         </span>
 
         <h3 class="text-sm leading-1 font-semibold cursor-pointer dark:text-white w-5/6 mt-1 mb-2 pr-0">
-          Set Video Playback Speed With JavaScript
+          {title}
         </h3>
 
         <div className="flex items-center gap-1 ">

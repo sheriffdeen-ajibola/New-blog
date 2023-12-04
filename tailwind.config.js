@@ -21,6 +21,7 @@ module.exports = {
           400: "#2dd4bf",
           500: "#00AAA1",
         },
+        secondary: {},
       },
     },
   },
