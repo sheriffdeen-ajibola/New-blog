@@ -115,7 +115,7 @@ const RecentPost = () => {
           </p>
           <div className=" grid grid-cols-2 gap-8  mb-20">
             {RecentPosts.map((post) => (
-              <RecentCard image={post.image} />
+              <RecentCard image={post.image} key={post.id} />
             ))}
           </div>
           <div className="text-center ">
