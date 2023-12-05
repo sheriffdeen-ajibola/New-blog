@@ -1,11 +1,14 @@
 import TitleHighlight from "@/components/TitleHighlight";
 import React from "react";
 import Image from "next/image";
+import AboutCard from "@/components/AboutCard";
+import Button from "@/components/Button";
+import { FaRegPenToSquare } from "react-icons/fa6";
 
 const about = () => {
   return (
     <div className="">
-      <div className="bg-primary-100 h-[600px] py-12 text-center w-full">
+      <div className="bg-primary-100  pt-12 pb-20 text-center w-full">
         <p className="mb-1 my-0 mx-auto w-1/3 ">
           <TitleHighlight label="Notebook is A Place" />
           <span className="text-[20px] ml-1 font-medium">
@@ -81,10 +84,30 @@ const about = () => {
         </div>
       </div>
       <div className=" py-20">
-        <p className="mb-1 my-0 mx-auto w-screen ">
+        <p className="mb-10 my-0 mx-auto text-center">
           <TitleHighlight label="Meet" />
           <span className="text-[20px] ml-1 font-medium">Our Authors</span>
         </p>
+        <div className="max-w-[864px] grid grid-cols-2 my-0 mx-auto">
+          <AboutCard />
+          <AboutCard />
+          <AboutCard />
+          <AboutCard />
+          <AboutCard />
+          <AboutCard />
+        </div>
+      </div>
+      <div className="max-w-[1076px] my-0 mx-auto text-current bg-primary-100 py-[56px] px-[180px] text-center mb-[100px]">
+        <p className="mb-5 my-0 mx-auto text-center text-[1.4rem] font-semibold">
+          Want To Write On Notebook?
+        </p>
+        <p className="mb-5">
+          there have some simple steps, by following these steps you can be a
+          regular author in notebook
+        </p>
+        <button className="py-[10px] px-[24px] text-[14px] border-primary-500 text-primary-500 rounded-md border-2 hover:bg-primary-500 hover:text-white">
+          Write On Notebook
+        </button>
       </div>
     </div>
   );

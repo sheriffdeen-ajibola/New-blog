@@ -23,10 +23,10 @@ const RecentPost = () => {
     {
       id: 2,
       title: "The 20 best creative & strong handmade of 2022",
-      category: "Lifestyle",
+      category: "Technology",
       author: "Jessica Koli",
       date: " 02 december 2022",
-      image: "/Creative.png",
+      image: "/Robot.jpg",
 
       duratiion: "3mins",
       Excerpt:
@@ -62,7 +62,7 @@ const RecentPost = () => {
       category: "Lifestyle",
       author: "Jessica Koli",
       date: " 02 december 2022",
-      image: "/PC.png",
+      image: "/Iphone.jpg",
 
       duratiion: "3mins",
       Excerpt:
@@ -86,7 +86,7 @@ const RecentPost = () => {
       category: "Lifestyle",
       author: "Jessica Koli",
       date: " 02 december 2022",
-      image: "/pexels4.jpg",
+      image: "/basketball.jpg",
 
       duratiion: "3mins",
       Excerpt:
@@ -138,7 +138,7 @@ const RecentPost = () => {
               <Author name="John Fedrick" />
             </div>
           </div>
-          <div className="h-80 bg-primary-500 w-full px-[20px] py-[50px] mb-20">
+          <div className="h-80 bg-primary-500 w-full px-[20px] py-[50px] mb-20 ">
             <div className="w-[80%]">
               <h3 class="text-xl cursor-pointer w-[80%] text-white mb-[10px] ">
                 Want To Travel Sikkim By Car
@@ -152,7 +152,7 @@ const RecentPost = () => {
               </button>
             </div>
           </div>
-          <div className="bg-transparent">
+          <div className="bg-transparent sticky top-2">
             <p className="mb-14">
               <TitleHighlight label="Search" />
               <span className="text-[20px] ml-1">With Tags</span>

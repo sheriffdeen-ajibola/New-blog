@@ -16,7 +16,7 @@ const Author = ({ name }) => {
       <div className="bg-gray-300 p-0 w-16 h-16  rounded-full"></div>
       <div className="flex-1 pb-2">
         <h3 class="text-sm font-semibold cursor-pointer w-5/6 ">{name}</h3>
-        <p className="text-sm text-gray-400 mb-3">
+        <p className="text-[12px] text-gray-400 mb-3">
           Fashion Designer, Blogger, Activist.
         </p>
         <div className="flex justify-between w-20 gap-3 ">
