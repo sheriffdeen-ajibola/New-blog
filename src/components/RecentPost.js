@@ -152,7 +152,7 @@ const RecentPost = () => {
               </button>
             </div>
           </div>
-          <div className="bg-transparent sticky top-2">
+          <div className="bg-transparent sticky top-5">
             <p className="mb-14">
               <TitleHighlight label="Search" />
               <span className="text-[20px] ml-1">With Tags</span>

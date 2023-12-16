@@ -5,7 +5,7 @@ import TitleHighlight from "../components/TitleHighlight";
 
 const Nav = () => {
   return (
-    <header className="px-40 py-5 bg-primary-200">
+    <header className="px-40 py-5 bg-primary-200 ">
       <nav className="flex justify-between items-center">
         <ul className="flex gap-8 font-medium text-sm ">
           <li className="cursor-pointer text-[#333333]">Hompage</li>
