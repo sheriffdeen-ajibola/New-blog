@@ -1,13 +1,14 @@
 import React from "react";
-import { CiSearch } from "react-icons/ci";
+import { ImSearch } from "react-icons/im";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { FaPenToSquare } from "react-icons/fa6";
 import TitleHighlight from "../components/TitleHighlight";
 
 const Nav = () => {
   return (
-    <header className="px-40 py-5 bg-primary-200 ">
+    <header className="px-40 xl:px-14 py-5 lg:py-4 bg-primary-200 ">
       <nav className="flex justify-between items-center">
-        <ul className="flex gap-8 font-medium text-sm ">
+        <ul className="flex gap-8 font-medium text-sm lg:hidden ">
           <li className="cursor-pointer text-[#333333]">Hompage</li>
           <li className="cursor-pointer text-[#333333]">About</li>
           <li className="cursor-pointer text-[#333333]">Categories</li>
@@ -21,14 +22,20 @@ const Nav = () => {
         </p>
 
         <ul className="flex gap-8 items-center font-medium text-sm">
-          <li className="cursor-pointer ttext-[#333333]">
-            <CiSearch size={25} />
+          <li className="cursor-pointer lg:w-2 text-[#333333]">
+            <ImSearch
+              size={18}
+              className="lg:w-5 w-6 font-bold text-primary-500"
+            />
           </li>
-          <li className="cursor-pointer text-[#333333]0">
+          <li className="cursor-pointer lg:hidden text-primary-500 text-[#333333]0">
             <FaPenToSquare />
           </li>
-          <li className="cursor-pointer text-[#333333]">Contact</li>
-          <li className="cursor-pointer text-[#333333]">En</li>
+          <li className="cursor-pointer lg:hidden text-[#333333]">Contact</li>
+          <li className="cursor-pointer lg:hidden text-[#333333]">En</li>
+          <li className="cursor-pointer lg:block hidden text-primary-500 w-2">
+            <RxHamburgerMenu size={25} />
+          </li>
         </ul>
       </nav>
     </header>

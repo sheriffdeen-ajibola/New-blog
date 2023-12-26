@@ -68,13 +68,13 @@ const Hero = () => {
 
   return (
     <section className="bg-primary-100">
-      <div className="h-full grid grid-cols-5 gap-[50px] py-[80px] max-w-[1150px] mx-auto my-0 lg:px-[2em]">
+      <div className="h-full grid grid-cols-5 gap-[50px] py-[80px] lg:py-[50px] max-w-[1150px] mx-auto my-0 lg:px-[2em]">
         <div className="col-span-3 lg:col-span-5">
           <p className="mb-14">
             <TitleHighlight label="Featured" />
-            <span className="text-[20px] ml-1">This month</span>
+            <span className="text-[22px] lg:text-[20px] ml-1 ">This month</span>
           </p>
-          <div className="lg:max-w-[800px] mx-auto">
+          <div className="lg:max-w-[700px] mx-auto">
             {featuredPosts.map((post) => (
               <FeaturedCard
                 image={post.image}

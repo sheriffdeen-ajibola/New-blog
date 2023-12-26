@@ -5,7 +5,7 @@ import { BsClock } from "react-icons/bs";
 
 const FeaturedCard = ({ image, title }) => {
   return (
-    <div className="p-4 grid grid-cols-7 gap-4 rounded-md bg-white mb-4 last:mb-0 sm:max-w-[400px] sm:mx-auto">
+    <div className="p-4 grid grid-cols-7 gap-4 lg:gap-6 rounded-md bg-white mb-4 lg:mb-8 last:mb-0 sm:max-w-[350px] sm:mx-auto lg:pb-10">
       <div className="col-span-3 sm:col-span-7 h-56 rounded-md bg-slate-400 ">
         <Image
           className="h-full w-full object-cover rounded-md"
@@ -21,7 +21,7 @@ const FeaturedCard = ({ image, title }) => {
           Lifestyle
         </span>
 
-        <h3 class="text-[1.4rem] sm:text-[1rem] font-semibold cursor-pointer dark:text-white w-5/6 mt-2 mb-4">
+        <h3 class="text-[1.4rem] sm:text-[1rem] font-semibold cursor-pointer dark:text-white lg:w-full mt-2 mb-4">
           {title}
         </h3>
 

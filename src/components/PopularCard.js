@@ -20,7 +20,7 @@ const PopularCard = ({ image, title }) => {
           Lifestyle
         </span>
 
-        <h3 class="text-sm leading-1 font-semibold cursor-pointer dark:text-white w-5/6 mt-1 mb-2 pr-0">
+        <h3 class="text-sm lg:text-[12px] leading-1 font-semibold cursor-pointer dark:text-white w-5/6 lg:w-full mt-1 mb-2 pr-0">
           {title}
         </h3>
 
