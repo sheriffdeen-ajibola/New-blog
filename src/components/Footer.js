@@ -7,9 +7,9 @@ import { FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="pt-[100px] pb-6 bg-primary-100">
+    <footer className="pt-[100px] pb-6 bg-primary-100 px-4">
       <div className="grid grid-cols-12  border-b border-[#D1E7E5;] gap-[100px] max-w-[1150px] mx-auto my-0 pb-16">
-        <div className="md:col-span-3 col-span-12 ">
+        <div className="col-span-3 sm:col-span-12">
           <p className="mb-8">
             <TitleHighlight label="Note" />
             <span className="text-[16px] ml-1 font-semibold ">Book</span>
@@ -19,7 +19,7 @@ const Footer = () => {
             Did you come here for something in particular or just general Riker
           </p>
         </div>
-        <div className="lg:col-span-2 col-span-12 md:col-span-3">
+        <div className="col-span-2">
           <h3 class="text-md font-semibold cursor-pointer w-5/6 mb-3">Blogs</h3>
           <ul>
             <li className="leading-7">Travel</li>
@@ -29,7 +29,7 @@ const Footer = () => {
             <li className="leading-7">Business</li>
           </ul>
         </div>
-        <div className="lg:col-span-2 col-span-12 md:col-span-3">
+        <div className=" col-span-2">
           <h3 class="text-md font-semibold cursor-pointer w-5/6 mb-3">
             Quick Links
           </h3>
@@ -40,7 +40,7 @@ const Footer = () => {
             <li className="leading-7">Privacy Policy</li>
           </ul>
         </div>
-        <div className="lg:col-span-5 md:col-span-8 col-span-5">
+        <div className="col-span-5 sm:col-span-12">
           <h3 class="text-md font-semibold cursor-pointer w-5/6 mb-5">
             Subscribe For Newsletter
           </h3>

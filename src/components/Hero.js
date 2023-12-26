@@ -68,13 +68,13 @@ const Hero = () => {
 
   return (
     <section className="bg-primary-100">
-      <div className="h-full grid grid-cols-5 gap-[50px] py-[80px] max-w-[1150px] mx-auto my-0">
-        <div className="col-span-3">
+      <div className="h-full grid grid-cols-5 gap-[50px] py-[80px] max-w-[1150px] mx-auto my-0 lg:px-[2em]">
+        <div className="col-span-3 lg:col-span-5">
           <p className="mb-14">
             <TitleHighlight label="Featured" />
             <span className="text-[20px] ml-1">This month</span>
           </p>
-          <div>
+          <div className="lg:max-w-[800px] mx-auto">
             {featuredPosts.map((post) => (
               <FeaturedCard
                 image={post.image}
@@ -84,12 +84,12 @@ const Hero = () => {
             ))}
           </div>
         </div>
-        <div className="border-l-primary-500 border-l-2 pl-[50px] col-span-2">
+        <div className="border-l-primary-500 border-l-2 lg:border-none pl-[50px] lg:pl-[10px] col-span-2 lg:col-span-5">
           <p className="mb-14">
             <TitleHighlight label="Popular" />
             <span className="text-[20px] ml-1">Posted</span>
           </p>
-          <div>
+          <div className="flex flex-col lg:flex-row lg:overflow-x-auto lg:gap-5 ">
             {popularPosts.map((post) => (
               <PopularCard
                 image={post.image}

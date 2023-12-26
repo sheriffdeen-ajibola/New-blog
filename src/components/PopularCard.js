@@ -4,8 +4,8 @@ import { BsClock } from "react-icons/bs";
 
 const PopularCard = ({ image, title }) => {
   return (
-    <div className="flex bg-transparent gap-5 w-auto mb-8">
-      <div className="w-1/3 h-22 rounded-md bg-slate-400">
+    <div className="flex bg-transparent gap-5 w-auto mb-8 lg:flex-col lg:min-w-[180px]">
+      <div className="w-1/3 lg:w-full h-22 rounded-md bg-slate-400">
         <Image
           className="h-full w-full rounded-md"
           src={image}
