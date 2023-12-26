@@ -15,7 +15,7 @@ const Nav = () => {
           <li className="cursor-pointer text-[#333333]">Pages</li>
         </ul>
 
-        <p className="font-semibold cursor-pointer">
+        <p className="font-semibold cursor-pointer text-center">
           <TitleHighlight label="Note" />
           <span className="text-gray-700">Book</span>
           <span className="text-3xl text-primary-500">.</span>
@@ -23,18 +23,15 @@ const Nav = () => {
 
         <ul className="flex gap-8 items-center font-medium text-sm">
           <li className="cursor-pointer lg:w-2 text-[#333333]">
-            <ImSearch
-              size={18}
-              className="lg:w-5 w-6 font-bold text-primary-500"
-            />
+            <ImSearch size={16} className="lg:w-5  text-primary-500" />
           </li>
-          <li className="cursor-pointer lg:hidden text-primary-500 text-[#333333]0">
-            <FaPenToSquare />
+          <li className="cursor-pointer lg:w-5 text-primary-500 ">
+            <FaPenToSquare size={16} />
           </li>
-          <li className="cursor-pointer lg:hidden text-[#333333]">Contact</li>
-          <li className="cursor-pointer lg:hidden text-[#333333]">En</li>
+          <li className="cursor-pointer sm:hidden text-[#333333]">Contact</li>
+          <li className="cursor-pointer sm:hidden text-[#333333]">En</li>
           <li className="cursor-pointer lg:block hidden text-primary-500 w-2">
-            <RxHamburgerMenu size={25} />
+            <RxHamburgerMenu size={23} />
           </li>
         </ul>
       </nav>

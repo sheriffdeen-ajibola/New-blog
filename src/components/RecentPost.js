@@ -107,13 +107,13 @@ const RecentPost = () => {
   ];
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-[1150px] h-full flex mx-auto my-0 gap-20">
-        <div className="w-2/3">
-          <p className="mb-14">
+      <div className="max-w-[1150px] lg:max-w-[700px] sm:max-w-[450px] h-full flex mx-auto my-0 gap-20 ">
+        <div className="w-2/3 lg:w-full">
+          <p className="mb-14 sm:ml-10">
             <TitleHighlight label="Recent" />
             <span className="text-[20px] ml-1">Posted</span>
           </p>
-          <div className=" grid grid-cols-2 gap-8  mb-20">
+          <div className=" grid grid-cols-2 sm:grid-cols-1 sm:max-w-[350px] sm:mx-auto gap-8  mb-20 ">
             {RecentPosts.map((post) => (
               <RecentCard image={post.image} key={post.id} />
             ))}
@@ -126,7 +126,7 @@ const RecentPost = () => {
             <Button label="Next &rarr;" />
           </div>
         </div>
-        <div className="w-1/3 bg-transparent">
+        <div className="w-1/3 bg-transparent lg:hidden">
           <p className="mb-8">
             <TitleHighlight label="Top" />
             <span className="text-[20px] ml-1">Authors</span>
