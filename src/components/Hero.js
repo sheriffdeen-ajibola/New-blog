@@ -74,7 +74,7 @@ const Hero = () => {
             <TitleHighlight label="Featured" />
             <span className="text-[22px] lg:text-[20px] ml-1 ">This month</span>
           </p>
-          <div className="lg:max-w-[700px] mx-auto">
+          <div className="lg:max-w-[750px] mx-auto">
             {featuredPosts.map((post) => (
               <FeaturedCard
                 image={post.image}
