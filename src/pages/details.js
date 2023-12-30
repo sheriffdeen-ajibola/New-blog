@@ -58,20 +58,20 @@ const details = () => {
     },
   ];
   return (
-    <section className="py-20 bg-white px-8">
+    <section className="py-20 md:py-10 bg-white px-8 md:px-4 lg:px-12 ">
       <div className="max-w-[1150px] h-full flex mx-auto my-0 gap-20">
-        <div className="w-2/3">
+        <div className="w-2/3 lg:w-full">
           <div className="pb-36 border-b border-primary-300 mb-28">
             <span className="bg-[#DFF1F0] py-1 px-3 text-[12px] rounded-sm cursor-pointer ">
               Lifestyle
             </span>
-            <h3 class="text-[2rem] font-semibold cursor-pointer dark:text-white w-5/6 mt-2 mb-4">
+            <h3 class="text-[2rem] md:text-[1.2rem] font-semibold cursor-pointer dark:text-white w-5/6 md:w-full mt-2 mb-4">
               Naming Convention in NextJS: Boosting SEO and Code Maintainability
             </h3>
 
             <div className="flex items-center gap-1 mb-3">
               <div className="w-5 h-5 bg-slate-400 rounded-full inline-block"></div>
-              <p className="text-xs flex gap-1 items-center text-xs mb-12">
+              <p className="text-xs flex gap-1 items-center mb-12">
                 Jesica Koli | <RiCalendar2Line /> 02 December 2022
               </p>
             </div>
@@ -104,19 +104,19 @@ const details = () => {
               about the assassination attempt
             </p>
           </div>
-          <div>
+          <div className="">
             <p className="mb-8">
               <TitleHighlight label="See Related" />
               <span className="text-[24px] ml-1 ">Posts</span>
             </p>
-            <div className=" grid grid-cols-2 gap-8  mb-20">
+            <div className=" grid grid-cols-2 md:grid-cols-1 gap-8 md:max-w-[350px]  mb-20">
               {RelatedPosts.map((post) => (
                 <RecentCard image={post.image} key={post.id} />
               ))}
             </div>
           </div>
         </div>
-        <div className="w-1/3 bg-transparent">
+        <div className="w-1/3 bg-transparent lg:hidden">
           <p className="mb-8">
             <TitleHighlight label="Top" />
             <span className="text-[20px] ml-1">Authors</span>
@@ -142,7 +142,7 @@ const details = () => {
               </button>
             </div>
           </div>
-          <div className="bg-transparent sticky top-5">
+          <div className="bg-transparent sticky top-5 ">
             <p className="mb-14">
               <TitleHighlight label="Search" />
               <span className="text-[20px] ml-1">With Tags</span>

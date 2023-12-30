@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const RecentCard = ({ image }) => {
   return (
-    <div className=" gap-4 rounded-md bg-white mb-4 last:mb-0 min-w-[250px]">
+    <div className=" gap-4 rounded-md bg-white mb-4 last:mb-0 min-w-[200px]">
       <div className=" h-56 rounded-md bg-slate-400 mb-8">
         <Image
           className="h-full w-full object-cover rounded-md "

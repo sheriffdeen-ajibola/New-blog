@@ -8,22 +8,22 @@ import Button from "@/components/Button";
 
 const contact = () => {
   return (
-    <div className=" p-20 pb-42 max-w-[1150px] mx-auto my-0">
+    <div className=" p-20 md:p-4 pb-42 max-w-[1150px] mx-auto my-0">
       <p className="mb-14 text-center">
         <TitleHighlight label="Contact " />
         <span className="text-[20px] ml-1 font-semibold">Us</span>
       </p>
-      <div className="flex  gap-14 ">
-        <div className="max-w-[638px]   w-1/2">
-          <form className=" grid grid-cols-2 gap-4 mb-6">
+      <div className="flex xs:flex-col gap-14 lg:gap-6 lg:text-[13px] ">
+        <div className="max-w-[638px] w-1/2 sm:mx-auto sm:my-0">
+          <form className=" grid grid-cols-2 lg:gap-2 gap-4  mb-6">
             <input
               type="text"
-              class="block  w-full text-sm border p-[10px] rounded-sm border-primary-400"
+              class="block  w-full text-sm border p-[10px] rounded-sm lg:col-span-2 border-primary-400"
               placeholder="Name"
             />
             <input
               type="text"
-              class="block w-full text-sm border p-[10px] rounded-sm border-primary-400"
+              class="block w-full text-sm border p-[10px] rounded-sm lg:col-span-2 border-primary-400"
               placeholder="Email"
             />
             <input
@@ -42,7 +42,7 @@ const contact = () => {
             Send message
           </button>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2  lg:text-[13px] sm:mx-auto sm:my-0">
           <p className="mb-6 w-5/6">
             Dynamically underwhelm integrated outsourcing via timely models.
             Rapidiously reconceptualize visionary imperatives without

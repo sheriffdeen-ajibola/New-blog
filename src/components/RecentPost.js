@@ -111,9 +111,9 @@ const RecentPost = () => {
         <div className="w-2/3 lg:w-full">
           <p className="mb-14 sm:ml-10">
             <TitleHighlight label="Recent" />
-            <span className="text-[20px] ml-1">Posted</span>
+            <span className="text-[20px] md:text-[16px] ml-1">Posted</span>
           </p>
-          <div className=" grid grid-cols-2 sm:grid-cols-1 sm:max-w-[350px] sm:mx-auto gap-8  mb-20 ">
+          <div className=" grid grid-cols-2 sm:grid-cols-1 sm:max-w-[320px] sm:mx-auto gap-8  mb-20 ">
             {RecentPosts.map((post) => (
               <RecentCard image={post.image} key={post.id} />
             ))}
