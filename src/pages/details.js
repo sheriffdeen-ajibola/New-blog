@@ -69,8 +69,8 @@ const details = () => {
               Naming Convention in NextJS: Boosting SEO and Code Maintainability
             </h3>
 
-            <div className="flex items-center gap-1 mb-3">
-              <div className="w-5 h-5 bg-slate-400 rounded-full inline-block"></div>
+            <div className="flex items-start gap-1 mb-3">
+              <div className="w-5 h-5 bg-slate-400 rounded-full "></div>
               <p className="text-xs flex gap-1 items-center mb-12">
                 Jesica Koli | <RiCalendar2Line /> 02 December 2022
               </p>

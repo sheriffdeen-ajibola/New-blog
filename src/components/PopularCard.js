@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { BsClock } from "react-icons/bs";
+import Link from "next/link";
 
 const PopularCard = ({ image, title }) => {
   return (
@@ -21,7 +22,7 @@ const PopularCard = ({ image, title }) => {
         </span>
 
         <h3 class="text-sm lg:text-[12px] leading-1 font-semibold cursor-pointer dark:text-white w-5/6 lg:w-full mt-1 mb-2 pr-0">
-          {title}
+          <Link href="/details">{title}</Link>
         </h3>
 
         <div className="flex items-center gap-1 ">

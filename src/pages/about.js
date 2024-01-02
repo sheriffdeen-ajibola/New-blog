@@ -85,7 +85,7 @@ const about = () => {
           </span>
         </div>
       </div>
-      <div className=" py-20 md:px-8 sm:px-4 mx-auto bg-gray-700">
+      <div className=" py-20 md:px-8 sm:px-4 mx-auto">
         <p className="mb-10 my-0 mx-auto text-center md:text-[15px]">
           <TitleHighlight label="Meet" />
           <span className="text-[20px] ml-1 font-medium">Our Authors</span>

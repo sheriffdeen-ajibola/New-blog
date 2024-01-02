@@ -2,6 +2,7 @@ import React from "react";
 import { RiCalendar2Line } from "react-icons/ri";
 import { BsClock } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
 
 const RecentCard = ({ image }) => {
   return (
@@ -22,7 +23,7 @@ const RecentCard = ({ image }) => {
         </span>
 
         <h3 class="text-[1.4rem] lg:text-[1.2rem] font-semibold cursor-pointer dark:text-white w-5/6 lg:w-full mt-2 mb-4">
-          Set Video Playback Speed With JavaScript
+          <Link href="/details">Set Video Playback Speed With JavaScript</Link>
         </h3>
 
         <div className="flex items-center gap-1 mb-3">

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { RiCalendar2Line } from "react-icons/ri";
 import { BsClock } from "react-icons/bs";
+import Link from "next/link";
 
 const FeaturedCard = ({ image, title }) => {
   return (
@@ -22,12 +23,12 @@ const FeaturedCard = ({ image, title }) => {
         </span>
 
         <h3 class="text-[1.4rem] sm:text-[1rem] font-semibold cursor-pointer dark:text-white lg:w-full mt-2 mb-4">
-          {title}
+          <Link href="/details">{title}</Link>
         </h3>
 
         <div className="flex items-center gap-1 mb-3">
           <div className="w-5 h-5 bg-slate-400 rounded-full inline-block"></div>
-          <p className="text-xs sm:text-[11px] flex gap-1 items-center text-xs ">
+          <p className="text-xs sm:text-[11px] flex gap-1 items-center">
             Jesica Koli | <RiCalendar2Line /> 02 December 2022 | <BsClock /> 3
             Min. To read
           </p>
